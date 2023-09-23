@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  mlflow_artifact_store:
+    image: quay.io/minio/minio
+    restart: always
+    env_file: ./credential.env
+    ports:
+      - "9000:9000"
+      - "9090:9090"
+    volumes:
+      - "~/minio/buckets/:/data"
+    command: server /data --console-address ":9090"
