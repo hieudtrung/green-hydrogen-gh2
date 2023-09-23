@@ -1,0 +1,5 @@
+outs:
+    - md5: 2ff86c8d80c6a56eaaa286197b48d4ee.dir
+      size: 0
+      path: dat
+      nfiles: 1
