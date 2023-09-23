@@ -1,3 +1,9 @@
+# Credentials
+credential.env
+
+# Local system config
+.vscode 
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
