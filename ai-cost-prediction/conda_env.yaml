@@ -4,7 +4,7 @@ channels:
 dependencies:
   - python>=3.11.*
   - ipykernel>=6.25.*
-  - lightning
+  - lightning>=2.1.*
   - mlflow
   - hydra-core
   - dvc=2.*
