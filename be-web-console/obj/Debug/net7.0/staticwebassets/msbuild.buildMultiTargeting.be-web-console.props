@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\be-web-console.props" />
+</Project>

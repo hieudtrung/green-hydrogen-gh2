@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "GpgidmEBGnefGAOtD0u4cfgRT34+WeJRsRGyJJ63Av4=",
+  "Source": "be-web-console",
+  "BasePath": "_content/be-web-console",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
