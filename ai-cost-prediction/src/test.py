@@ -1,12 +1,18 @@
-import numpy as np
+from models import *
+import hydra
+from omegaconf import DictConfig, OmegaConf
+from data_modules import *
 
-l = [[1,2,3], [4,5,6]]
-mat = np.array(l)
 
-print(mat.shape)
+@hydra.main(config_path="../cfg", config_name="tester")
+def main(cfg: DictConfig) -> None:
+    model = MaximumLikelihood()
+    # Init data module instance
+    data_module = OnlineModule() if cfg.train_mode == "online" else OfflineModule()
 
-for i in range(10):
-    weights = np.random.randn(3,1)
-    print(f"Vectorh {i}-th")
-    vec = np.matmul(mat, weights)
-    print(vec, "\n")
+    # Start fitting
+    model.test(data_module)
+
+
+if __name__ == "__main__":
+    main()

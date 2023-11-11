@@ -1,4 +1,3 @@
-lr: 0.001 # learning rate
-bs: 16 # batch size
+bs: 32 # batch size
 train_mode: "offline"
 model_path: "file:///data/checkpoints/example.pth"
