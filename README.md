@@ -60,9 +60,19 @@ A Docker-compose file is also available for you to self-host on your own PC. Not
 
 ### Sequence Diagrams
 
+There are many use cases whose sequence diagrams will be uploaded in this [OneDrive folder](https://syddanskuni-my.sharepoint.com).
+
 ### Overall Architecture
 
-This picture reveals the overall system. For more details about each service's structure & communication protocol, please  find them in their corresponding README document.
+This picture reveals the overall system's architecture that is Azure-native. For more details about each service, please look at their corresponding README.
+
+![overall-architecture-azure](images/GH2-DataArch.drawio.svg).
+
+### Deploy On-premise
+
+Regarding data management, I also have a self-hosted solution on my homelab cluster using Delta Lake, Apache Spark, and Kubeflow. I'll keep it update once everything is tested properly.
+
+Please keep in mind, the public source code is designed to work with Azure services. On-premise deployment would require a lot of modification, thus it's not recommended.
 
 ## Contribute
 
